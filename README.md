@@ -917,7 +917,24 @@ class Registration extends React.Component {
 
 ### Vue.js 
 
-> TODO
+```html
+<template>
+  <section v-if="registrationCompleted">
+    <registration-completed />
+  </section>
+  <section v-else-if="registrationCompleted && displaySpecialOffer">
+    <registration-completed />
+    <special-offer />
+  </section>
+  <section v-else>
+    <registration-form />
+  </section>
+</template>
+
+```
+
+:arrow_right: https://vuejs.org/v2/guide/conditional.html
+
 
 # Lists
 
