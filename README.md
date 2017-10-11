@@ -915,7 +915,9 @@ class Registration extends React.Component {
 }
 ```
 
-### Vue.js 
+### Vue.js
+
+Vue.js has three directives to perform conditional rendering: `v-if`, `v-else-if` and `v-else`.
 
 ```html
 <template>
@@ -923,14 +925,13 @@ class Registration extends React.Component {
     <registration-completed />
   </section>
   <section v-else-if="registrationCompleted && displaySpecialOffer">
-    <registration-completed />
     <special-offer />
+    <registration-completed />
   </section>
   <section v-else>
     <registration-form />
   </section>
 </template>
-
 ```
 
 :arrow_right: https://vuejs.org/v2/guide/conditional.html
