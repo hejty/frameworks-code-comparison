@@ -919,7 +919,7 @@ class Registration extends React.Component {
 
 ```html
 <template>
-  <section v-if="registrationCompleted">
+  <section v-if="registrationCompleted && !displaySpecialOffer">
     <registration-completed />
   </section>
   <section v-else-if="registrationCompleted && displaySpecialOffer">
